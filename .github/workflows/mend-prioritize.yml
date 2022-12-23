@@ -38,7 +38,6 @@ jobs:
       run: mvn clean install -DskipTests=true
 
     - name: WhiteSource Unified Agent Scan
-      env:
       run: |
         cat <<EOF > eua.config
         apiKey=$WS_APIKEY
@@ -64,7 +63,6 @@ jobs:
         java -jar xModuleAnalyzer.jar -xModulePath multimodule.txt -fsaJarPath ./wss-unified-agent.jar -c ./eua.config -aggregateModules true
 
     - name: Prioritize Ignore Alerts
-      env:
       run: |
         curl -LJO https://raw.githubusercontent.com/whitesource-ft/ws-examples/main/Scripts/prioritize-ignore.sh 
         chmod +x ./prioritize-ignore.sh && ./prioritize-ignore.sh
