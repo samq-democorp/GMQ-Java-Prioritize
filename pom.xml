@@ -153,7 +153,7 @@
             <scope>provided</scope>
             <optional>true</optional>
         </dependency>
-<!-- Force Scan -->
+<!-- Force Scan to update issues-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-exec</artifactId>
