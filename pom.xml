@@ -148,12 +148,12 @@
 
     <dependencies>
         <dependency>
+<!-- Force Scan to update issues-->
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
             <optional>true</optional>
         </dependency>
-<!-- Force Scan to update issues-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-exec</artifactId>
